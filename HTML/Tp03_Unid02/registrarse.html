@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Prácica 03 - Iframe y Formularios</title>    
+</head>
+<body>
+    <!-- Cabecera-->
+    <header style="background-color: orange;">
+
+        <!--Menú de navegación-->
+        <nav>
+            <a style="background-color: rgb(174, 174, 212);" href="index.html">Home</a>
+            <a style="background-color: rgb(174, 174, 212);" href="acerca_de.html">Acerca de</a>
+            <a style="background-color: rgb(174, 174, 212);" href="contacto.html">Contacto</a> 
+            <a style="background-color: rgb(174, 174, 212);" href="registrarse.html">Regístrese</a>
+            <a style="background-color: rgb(174, 174, 212);" href="sucursales.html">Sucursales</a>   
+        </nav>
+        <h1 style="text-align: center;">Pastelería Mara</center></h1>
+    </header>    
+    <menu>
+        <h2>Formulario de Registro</h2>
+        <form action="show_data.html" target="_blank">
+            <label for="nombre">Nombre</label> <input type="text" name="nombre" placeholder="Ingrese su nombre..."><br><br>
+            <label for="apellido">Apellido</label> <input type="text" name="apellido" placeholder="Ingrese su apellido..."><br><br>
+            <label for="direccion">Dirección</label> <input type="text" name="direccion" placeholder="Ingrese su dirección..."><br><br>
+            <label for="ciudad">Ciudad</label> <input type="text" name="ciudad" value="Mendoza"><br><br>
+            <label for="cod_postal">Código Postal</label> <input type="text" name="cod_postal" placeholder="Ingrese su código postal..."><br><br>
+            <label for="fecha_nacimiento">Fecha de Nacimiento (dd/mm/yyyy)</label><input type="date" name="fecha_nacimiento"><br><br>
+            <p>Género
+                <input type="radio" name="genero" value="Hombre" checked>Hombre
+                <input type="radio" name="genero" value="Mujer">Mujer
+                <input type="radio" name="genero" value="Otro">Otro
+            </p>
+            <p>Estudios: 
+                <input type="checkbox" name="estudio" value="Primario">Primarios
+                <input type="checkbox" name="estudio" value="Secundario">Secundarios
+                <input type="checkbox" name="estudio" value="Terciario">Terciarios
+                <input type="checkbox" name="estudio" value="Universitario">Universitarios
+                <input type="checkbox" name="estudio" value="Otro">Otros
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+        <p>Si usted hace clic en el botón "Enviar", la información sera enviada a la página "show_data.html"</p>
+    </menu>
+<!--Pie de página-->
+<footer style="background-color: orange;">
+    <p style="text-align: center;">Derechos reservados @2020 </p>
+</footer>
+</body>
+</html>
