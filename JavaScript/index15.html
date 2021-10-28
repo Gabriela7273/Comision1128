@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Divisores</title>
+</head>
+<body>
+    <script>
+        //Programa: Dado un nro mostrar los divisores
+        
+        var Num1 = parseInt(prompt("Ingrese un número entero"));
+
+        document.write("El número es: " + Num1 + "<br>");
+        document.write("Divisores: "); 
+
+        for (var i=1; i<Num1; i++){
+            if ((Num1 % i) == 0){
+                document.write(i + " - ");
+            }
+
+        }        
+    </script> 
+</body>
+</html>

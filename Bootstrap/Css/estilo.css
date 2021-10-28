@@ -1,0 +1,81 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    /*margin: 30px;*/
+}
+header{
+    background-color:black;
+    color: white;
+    padding: 20px;
+    width: 100%; 
+    left: 0;
+}
+.nav{
+    background-color: gray;
+    color: white;  
+    margin-top: 20px;  
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.formulario{
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 2%;
+    margin: 1% 20%;
+}
+label, input{
+    font-size: 1.0vw;
+}
+input[type="text"],input[type="password"],input[type="date"],input[type="email"],input[type="number"],
+input[type="url"],input[type="textarea"]{
+    width: 80%;
+    padding: 1vw;
+    margin: 1vw;
+    display: inline-block;
+    border: 1px solid tomato;
+    border-radius: 4px;
+    box-sizing:border-box;
+}
+textarea{
+    width: 60%;
+}
+input[type="submit"],input[type="reset"]{
+    width: 100%;
+    background-color:rgba(30, 210, 135, 0.432);
+    color: rgb(19, 16, 16);
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.imagen{
+    width: 20%;
+    margin-left: 11%;
+}
+footer{
+    background-color: black;
+    color: white;    
+    left: 0;
+    bottom: 0%;
+    width: 100%;
+    padding: 60px;
+    margin-top: 20px;
+    text-align: center;
+    height: 60px;
+    font-size: 20px;
+   position: fixed;   
+}
+.icono{
+    color: white;
+    font-size: 1.5vw;    
+}
+tr{
+    text-align: center;
+}

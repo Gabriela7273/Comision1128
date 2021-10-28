@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Cuenta la vocal A</title>
+</head>
+<body>
+    <script>
+        //Programa que recibe una frase y cuenta la cantidad de vocales A que aparecen
+        var Frase = prompt("Ingrese una frase");
+        var Long = Frase.length;
+        var i;
+        var cont=0;
+        for(i = 0; i < Long; i++){
+            if((Frase[i] == 'a') || (Frase[i] == 'A')){
+                cont++;
+            }
+        }
+        //document.write(Long);
+        document.write("Cantidad de vocal a es: " + cont);
+    </script>
+</body>
+</html>

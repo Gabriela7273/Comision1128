@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript divisores Comunes</title>
+</head>
+<body>
+    <script>
+        //Programa: Dado dos nro mostrar los divisores comunes
+
+        var Num1 = parseInt(prompt("Ingrese un número entero"));
+        var Num2 = parseInt(prompt("Ingrese un número entero"));
+        var Hasta;
+
+        document.write("El primer número es: " + Num1 + "<br>");
+        document.write("El segundo número es: " + Num2 + "<br>");
+
+        if (Num1 < Num2){ Hasta = Num1;}
+        else { Hasta = Num2;}
+
+        document.write("Divisores comunes: "); 
+
+        for (var i=1; i<Hasta; i++){
+            if ((Num1 % i) == 0 && (Num2 % i) == 0){
+                document.write(i + " - ");
+            }
+        }        
+    </script>
+</body>
+</html>

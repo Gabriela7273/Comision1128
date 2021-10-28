@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>JavaScript el nro mayor</title>
+</head>
+<body>
+    <!--Pide tres números y muestra cual es el mayor de ellos-->
+    <script>
+        Num1 = parseInt(prompt("Ingrese un número"));
+        Num2 = parseInt(prompt("Ingrese un número"));
+        Num3 = parseInt(prompt("Ingrese un número"));
+        
+        // utilizo la función Math para determinar el mayor valor
+
+        Maxi = Math.max(Num1, Num2, Num3);
+        document.write("El mayor valor es: " + Maxi + "<br>");
+        
+        //Utilizo IF para comparar cual es el mayor de los nros ingresados
+
+        if (Num3 > Num2 && Num1 < Num3){
+            document.write("El último número es mas grande: " + Num3);
+        }
+        else{
+            if(Num2 > Num1 && Num2 > Num3){
+                document.write("El segundo número es mas grande: " + Num2);
+            }
+            else{
+                document.write("El primer número es mas grande: " + Num1);
+            }
+        }
+        
+    </script>
+</body>
+</html>

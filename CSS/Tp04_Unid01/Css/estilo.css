@@ -1,0 +1,71 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    /*margin: 30px;*/
+}
+header{
+    background-color:black;
+    color: white;
+    padding: 20px;
+    width: 100%; 
+    left: 0;
+}
+.nav{
+    background-color: gray;
+    color: white;  
+    margin-top: 20px;  
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#foto{
+    width: 700x;
+    height: 500px;
+    animation-name: slidein;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+#foto:hover{
+    animation-play-state: paused;
+}
+
+@keyframes slidein{
+    0%{
+        width: 700px;
+        height: 500px;
+        background: url(../Imag/Bizcoentero.png);
+    }
+    50%{
+        width: 700px;
+        height: 500px;
+        background: url(../Imag/Biscocortado.png);
+    }
+    100%{
+        width: 700px;
+        height: 500px;
+        background: url(../Imag/torta.png);
+    }
+}
+footer{
+    background-color: black;
+    color: white;    
+    left: 0;
+    bottom: 0%;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+    position: fixed;    
+}
+tr{
+    text-align: center;
+}

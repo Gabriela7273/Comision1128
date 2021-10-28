@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Cuantas vocales hay</title>
+</head>
+<body>
+    <script>
+        //Programa que cuenta vocales hay en una frase
+        var Frase = prompt("Ingrese una frase");
+        var Long = Frase.length;
+        var i;
+        var cont=0;
+
+        document.write("Frase: " + Frase + "<br>");        
+        for(i = 0; i < Long; i++){
+            switch(Frase[i]){
+                case 'a' || 'A': cont++; break;
+                case 'e' || 'E': cont++; break;
+                case 'i' || 'I': cont++; break;
+                case 'o' || 'O': cont++; break;
+                case 'u' || 'U': cont++; break;
+            }            
+        }        
+        document.write("Cantidad de Vocales: " + cont);
+    </script>
+</body>
+</html>

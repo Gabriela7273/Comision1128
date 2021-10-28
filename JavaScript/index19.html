@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Nota</title>
+</head>
+<body>
+    <script>
+        //Programa: Dada una nota muestre su calificación
+
+        var Nota = parseFloat(prompt("Ingrese una nota"));
+        var calif;
+
+        if (Nota >0 && Nota <= 3) calif = "Muy deficiente";
+        else{
+            if (Nota >3 && Nota <= 5) calif = "Insuficiente";
+            else{
+                if (Nota >5 && Nota <= 6) calif = "Suficiente";
+                else{
+                    if (Nota >6 && Nota <= 7) calif = "Bien";
+                    else{
+                        if (Nota >7 && Nota <= 9) calif = "Notable";
+                        else{
+                            if (Nota >9 && Nota <= 10) calif = "Sobresaliente";
+                        }
+                    }
+                }
+            }
+        }
+        document.write("Su calificación es: " + calif);
+    </script>
+</body>
+</html>
